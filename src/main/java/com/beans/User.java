@@ -2,8 +2,32 @@ package com.beans;
 
 public class User
 {
-    public void hello()
+    int id;
+    String name;
+
+    public int getId()
     {
-        System.out.println("hello world "+System.currentTimeMillis());
+        return id;
+    }
+
+    public void setId(int id)
+    {
+        this.id = id;
+    }
+
+    public String getName()
+    {
+        return name;
+    }
+
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+
+    @Override
+    public String toString()
+    {
+        return "User{" + "id=" + id + ", name='" + name + '\'' + '}';
     }
 }
